@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>document</title>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <style>
+    /* Style for the card */
+    .card1 {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card1" id="formCard">
+    <h2>Update Form</h2>
+    <form id="updateForm">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <button type="button" onclick="updateCard()">Update Card</button>
+    </form>
+  </div>
+  <script>
+    function updateCard() {
+
+      let name = document.getElementById('name').value;
+      let email = document.getElementById('email').value;
+
+
+      let card = document.getElementById('formCard');
+      card.innerHTML = `  <div class="card-add">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="card" style="border: none; border-radius: 0px; margin-top: -304px;">
+          <div class="card-img">
+            <div class="card-data">
+              <h2>Revamp your home in style</h2>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="card-add-img mt-2">
+                  <img src="images/186x116_Home_furnishings_2._SY116_CB584596691_.jpg" alt="">
+                  <p>Cushion covers, bedsheets</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card-add-img mt-2">
+                  <img src="images/186x116_Home_decor_1._SY116_CB584596691_.jpg" alt="">
+                  <p>Figurines, vases and more</p>
+                </div>
+              </div>
+
+              <div class="col-6 d-flex">
+                <div class="card-add-img">
+                  <img src="images/186x116_Home_storage_1._SY116_CB584596691_.jpg" alt="">
+                  <p>Home storage</p>
+                  <span><a href="#">Explore all</a></span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card-add-img">
+                  <img src="images/186x116_Home_lighting_2._SY116_CB584596691_.jpg" alt="">
+                  <p>Lighting solutions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="card" style="border: none; border-radius: 0px;  margin-top: -304px;">
+          <div class="card-img">
+            <div class="card-data">
+              <h2>Up to 60% off | Styles for men</h2>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="card-add-img mt-2">
+                  <img src="images/MF-1-186-116._SY116_CB636110853_.jpg" alt="">
+                  <p>Clothing</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card-add-img mt-2">
+                  <img src="images/MF-2-186-116._SY116_CB636110853_.jpg" alt="">
+                  <p>Footwear</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card-add-img mt-3">
+                  <img src="images/MF-3-186-116._SY116_CB636110853_.jpg" alt="">
+                  <p>Watches</p>
+                  <span><a href="#">End of season sale</a></span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card-add-img mt-3">
+                  <img src="images/MF-4-186-116._SY116_CB636110853_.jpg" alt="">
+                  <p>Bags & wallets</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="card" style="border: none; border-radius: 0px;  margin-top: -304px;">
+          <div class="card-img">
+            <div class="card-data">
+              <h2>Up to 75% off | Headphones</h2>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="card-add-img mt-2">
+                  <img src="images/Boat_Desktop_Qc_1x._SY116_CB577919562_.jpg" alt="">
+                  <p>Up to 75% off | boAt</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card-add-img mt-2">
+                  <img src="images/Boult_Desktop_Qc_1x._SY116_CB577919562_.jpg" alt="">
+                  <p>Up to 75% off | boult</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card-add-img mt-3">
+                  <img src="images/Noise_Desktop_Qc_1x._SY116_CB577919562_.jpg" alt="">
+                  <p>Up to 75% off | Noise</p>
+                  <span><a href="#">See all offers</a></span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card-add-img mt-3">
+                  <img src="images/Zebronics_Desktop_Qc_1x._SY116_CB577919562_.jpg" alt="">
+                  <p>Up to 75% off | Zebronics</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="card" style="border: none; border-radius: 0px; margin-top: -304px;">
+          <div class="card-img">
+            <div class="card-data">
+              <h2 style="font-size: 21px; font-weight: 700;">Sign in for your best<br> experience</h2>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-warning py-1" type="button"
+                style="border-radius: 10px; margin-bottom: 20px; font-size: 14px;">Sign in securely</button>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="border: none; border-radius: 0px; margin-top: 20px;">
+          <div class="card-imgage" style="height: 200px; width: 190; margin: 0 auto;">
+            <img src="images/31b26mEZpRL._SY300_SX300_.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <button type="button" onclick="updateCard()">Update Card</button>
+    `;
+    }
+  </script>
+
+</body>
+
+</html>
